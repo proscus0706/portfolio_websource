@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 모바일에서 제대로 render되게 하기 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shin Seunghyun's Portfolio</title>
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/c1993a1201.js"></script>
+    <!--Superslides local에서 가져옴-->
+    <link rel="stylesheet" href="css/lib/superslides.css">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
+    <!--Bootstrap cdn으로 가져옴-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fancy box local으로 가져옴-->
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.fancybox.min.css">
+    <!-- 🔴 textAnimation -->
+    <link rel="stylesheet" href="css/lib/animate.css">
+    <!-- 나의 css 파일 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/imported_from_codepen.css">
+
+    <!--jquery cdn으로 가져옴-->
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- loading -->
+<div class="loader">
+    <div class="inner"></div>
+</div>
+
+<!--section slides-->
+<div id="slides">
+
+    <div class="overlay"></div>
+
+        <div class="slides-container">
+            <img src="img/slide1.jpg" alt="">
+            <img src="img/slide2.jpg" alt="">
+            <img src="img/slide3.jpg" alt="">
+        </div>
+
+        <div class="titleMessage">
+            <div class="heading">
+                <p class="main">SHIN SEUNG-HYUN</p>
+                <p class="sub typed"></p>
+            </div>
+        </div>
+
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+
+</div>
+
+<!--Navigation Bar-->
+<nav id="navigation" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Shin Seung-Hyun</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#stats">Stats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<!--section about-->
+<div id="about" class="aboutSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 myPhoto">
+                    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Loved+by+the+King" rel="stylesheet" type="text/css">
+                    <figure class="aboutFigure">
+                        <img class="aboutImage" src="img/me.jpg">
+                        <figcaption>Shin SeungHyun</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-7 myDescription">
+                    <div class="aboutText paper paper1">
+                        <h4>My name is Shin Seung-Hyun</h4>
+                        <p>Hi there! I'm Paige Shin from Seoul, South Korea. I started my programming journey in july 2018 and recently quit an Android-app development educational institute. I studied there for six months, from august, 2018 to january, 2019. However, my long journey for Software Development & Entrepreneurship never ended. I am currently going through a realignment period of my own.</p>
+                        <p>I plan on studying programming intensively until December, 2019. After doing so, I am looking for a job placement in software development beginning from January 2020.</p>
+                        <p>My specialty will be focused on </p>
+                            🔷 <strong>LAMP Stack Web Development</strong>
+                            <br>
+                            🔷 <strong>MERN Stack Web Development</strong>
+                            <br>
+                            🔷 <strong>Android Development</strong>
+                            <br>
+                            🔷 <strong>React Native Mobile Application Development</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--section skills-->
+<div id="skills" class="skillsSection section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <h2>TECHNICAL SKILLS</h2>
+                <p>A representation of my proficiency in each skills</p>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <!-- owl-carousel안에다가 easy piechart를 넣는다 -->
+                <!-- LAMP -->
+                <div class="skills">
+                    <span class="chart" data-percent="70">
+                        <span class="percent">70</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>LAMP Stack</h4>
+                    <p>Used to learn general web-development process</p>
+                </div>
+                <!-- MERN -->
+                <div class="skills">
+                    <span class="chart" data-percent="50">
+                        <span class="percent">73</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>MERN Stack</h4>
+                    <p>Interested in Modern Web development, most of my recent projects were built wth MERN stack.</p>
+                </div>
+                <!-- Android -->
+                <div class="skills">
+                    <span class="chart" data-percent="70">
+                        <span class="percent">70</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>Android</h4>
+                    <p>When I first started to learn Programming, I did it with Android Platform</p>
+                </div>
+                <!-- React Native -->
+                <div class="skills">
+                    <span class="chart" data-percent="50">
+                        <span class="percent">50</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>React Native</h4>
+                    <p>I still believe in mobile revolution. Most of my recent mobile applications were built with React Native.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--section stats-->
+<div id="stats" class="statsSection section">
+    <div class="container">
+        <div class="row">
+            <!-- Learning Period -->
+            <div class="col-md-3 col-sm-6">
+                <div class="squareItem">
+                    <div class="squareInnerContainer">
+                        <div class="squareIcon">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <div class="squareContent">
+                            <h2 class="counter">12</h2>
+                            <h3>Months learning period</h3>
+                            <h3>as of july, 2019</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Client -->
+            <div class="col-md-3 col-sm-6">
+                <div class="squareItem">
+                    <div class="squareInnerContainer">
+                        <div class="squareIcon">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <div class="squareContent">
+                            <h2 class="counter">0</h2>
+                            <h3>Clients</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Websites -->
+            <div class="col-md-3 col-sm-6">
+                <div class="squareItem">
+                    <div class="squareInnerContainer">
+                        <div class="squareIcon">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <div class="squareContent">
+                            <h2 class="counter">11</h2>
+                            <h3>Websites Made</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Apps -->
+            <div class="col-md-3 col-sm-6">
+                <div class="squareItem">
+                    <div class="squareInnerContainer">
+                        <div class="squareIcon">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <div class="squareContent">
+                            <h2 class="counter">3</h2>
+                            <h3>Mobile Apps Made</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--section contact-->
+<div id="contact" class="contactSection section">
+    <div class="col-md-12 text-center">
+        <p class="subHeading">Like what you see?</p>
+        <!--    🔴TextAnimation 적용    -->
+        <h2 class="tlt">I'd love to hear from you!</h2>
+        <a href="mailTo:creitoscus@gmail.com" class="contactButton">GET IN TOUCH!</a>
+    </div>
+</div>
+
+<!--section portfolio projects-->
+<div id="portfolio" class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="heading">
+                <h2>PORTFOLIO</h2>
+            </div>
+
+            <div class="filter">
+                <ul id="filters">
+
+                    <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                    <li><a href="#" data-filter=".others">Others</a></li>
+                    <li><a href="#" data-filter=".websites">Websites</a></li>
+                    <li><a href="#" data-filter=".app">Mobile App</a></li>
+
+                </ul>
+            </div>
+
+            <div class="itemsContainer">
+                <ul class="items">
+                    <!--⁉️아래 추가해준 onClick은 debugging 용이다. mobile에서 아이콘이 제대로 나오지 않는 것을 위해서 건든 조치.-->
+                    <li onclick="" class="others col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/attackontitan.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/attackontitan.png" title="View image" class="openButton" data-fancybox data-caption="Java Console Programming, Technologies used: JavaFX/JFrame/JLayer">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!-- proejctLink class가 있는 부분의 element를 클릭했을 때 해당 작품으로 가게 만든다. -->
+                                <a href="https://www.youtube.com/watch?v=TBi-I9Yd9cA&t=432s" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/portfolio.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/portfolio.png" title="View image" class="openButton" data-fancybox data-caption="portfolio website, Technologies used: HTML & CSS & fontawesome & google fonts & jquery & bootstrap & superslide.js & owl.carousel.js & animate.js & fancybox.js & countUp.js & lettering.js & textilate.js & easypiechart.js & typed.js & isotop & AWS EC2 Ubuntu Free Tier">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!-- 나중에 여기다가 url 추가해줘야 함. -->
+                                <a href="#" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/static.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/static.png" title="View image" class="openButton" data-fancybox data-caption="HTML/CSS Practice Corporation introduction page, Technologies used: HTML & CSS & javascript & superslides.js & isotop">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=ZS7krAGAogo" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/SNS.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/SNS.png" title="View image" class="openButton" data-fancybox data-caption="Simple SNS website built with PHP, Technologies used: bootstrap & jquery & ajax & font-awesome & html & css & javascript & php & mysql & ubuntu(virtual machine + localhost)">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=93rp97v4Gd4" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/shoppingmall.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/shoppingmall.png" title="View image" class="openButton" data-fancybox data-caption="Simple Shopping Mall website with PHP, Technologies used: HTML & CSS & javascript & jQuery & ajax & bootstrap & paypal api & chatbot api & php & mysql & ubuntu(virtual machine + localhost)">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=wr399dyFMhY" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/gymtalk.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/gymtalk.png" title="View image" class="openButton" data-fancybox data-caption="Android SNS practice, Technologies used: java & android & firebase & unity - Actually, I built this application one year ago, when I just started programming. So I lost all my source codes. Then, I didn't even know what github is. I used various android libraries but I can't remember it all. I hope you to understand this. .">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=3DskFYeiT5I" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/shoppingmoa.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/shoppingmoa.png" title="View image" class="openButton" data-fancybox data-caption="Simple Shopping app, Technologies used: android & Kotlin & Wampp & php & mysql & Volley & Picasso & Paypal api">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=_zAb4147UeA&feature=youtu.be" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/bona.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/bona.png" title="View image" class="openButton"
+                                   data-fancybox data-caption="Second-hand shop, advanced mobile android application practice. Technologies used: android & ubuntu - amazon EC2 & php & unity & apache2 & mysql & java & php & c# & html & css & Retrofit2 & BottomNavigationViewEx & glide & Gson & easyPermission & jsoupe & jdbc & paypal & opentok">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=d7kuODCxFXA" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/todo_jquery.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/todo_jquery.png" title="View image" class="openButton"
+                                   data-fancybox data-caption="to-do-list simple jquery practice. Technologies used:HTML & CSS & Javascript & Jquery">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="./projects/to_do_list_project/index.html" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/funny_sound_app.png" alt="">
+                            <div class="icons">
+                                <a href="img/portfolio/thumbnails/apps/funny_sound_app.png" title="View image" class="openButton"
+                                   data-fancybox data-caption="Simple javascript library practice. Type anything with your keyboard! Technologies used:HTML & CSS & Javascript & howler.js & paper.js">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="./projects/sound_web/circles.html" target="_blank" class="projectLink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imageOverlay"></div>
+                        </div>
+                    </li>
+
+                    <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="item">
+                        <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/color_game.png" alt="">
+                        <div class="icons">
+                            <a href="img/portfolio/thumbnails/apps/color_game.png" title="View image" class="openButton"
+                               data-fancybox data-caption="jquery javascript coding practice.  Technologies used:HTML & CSS & Javascript & jquery">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="./projects/color_game_jquery/color_game.html" target="_blank" class="projectLink">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                        <div class="imageOverlay"></div>
+                    </div>
+                </li>
+
+                <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="item">
+                        <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/simple_html_css_app.png" alt="">
+                        <div class="icons">
+                            <a href="img/portfolio/thumbnails/apps/simple_html_css_app.png" title="View image" class="openButton"
+                               data-fancybox data-caption="pure html & css practice without any external libraries.  Technologies used:HTML & CSS">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="./projects/simple_life/index.html" target="_blank" class="projectLink">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                        <div class="imageOverlay"></div>
+                    </div>
+                </li>
+
+                <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="item">
+                        <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/candy_meseum.png" alt="">
+                        <div class="icons">
+                            <a href="img/portfolio/thumbnails/apps/candy_meseum.png" title="View image" class="openButton"
+                               data-fancybox data-caption="Bootstrap responsive web practice.  Technologies used:HTML & CSS & Bootstrap">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="./projects/candy_museum/museum.html" target="_blank" class="projectLink">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                        <div class="imageOverlay"></div>
+                    </div>
+                </li>
+
+                <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="item">
+                        <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/simple_blog.png" alt="">
+                        <div class="icons">
+                            <a href="img/portfolio/thumbnails/apps/simple_blog.png" title="View image" class="openButton"
+                               data-fancybox data-caption="Simple blog, resful api preactice with node.  Technologies used:HTML & CSS & Javascript & Node.js & semantic ui, npm:body-parser, ejs, express, express-sanitizer, method-override, mongoose, nodemon">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=2wYYODNSbWc" target="_blank" class="projectLink">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                        <div class="imageOverlay"></div>
+                    </div>
+                </li>
+
+                <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="item">
+                        <img class="imgPortfolio" src="img/portfolio/thumbnails/apps/todolist.png" alt="">
+                        <div class="icons">
+                            <a href="img/portfolio/thumbnails/apps/todolist.png" title="View image" class="openButton"
+                               data-fancybox data-caption="simple todolist, node.js practice.  Technologies used:HTML & CSS & JavaScript & Node.js, npm:body-parser, express, mongoose">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=5X4gc_-aHWw" target="_blank" class="projectLink">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                        <div class="imageOverlay"></div>
+                    </div>
+                </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--section copyright-->
+<div class="copyrightSection">
+    <div class="col-md-12 text-center">
+        <p>&copy; Copyright Shin Seunghyun 2019. </p>
+        <p>(But Actually I don't care if you want to copy my entire codes. That's how programmers learn!)</p>
+    </div>
+</div>
+
+
+
+
+<!--superslides local에서 가져옴-->
+<script src="js/lib/jquery.superslides.min.js"></script>
+<!--Typed.js local에서 가져옴-->
+<script src="js/lib/typed.min.js"></script>
+
+<!--Owl.carousel.js local에서 가져옴-->
+<script src="js/lib/owl.carousel.min.js"></script>
+<!--Easypie chart local에서 가져옴-->
+<script src="js/lib/jquery.easypiechart.min.js"></script>
+
+<!--Countup.js-->
+<script src="js/lib/countUp-jquery.js"></script>
+<script src="js/lib/countUp.js"></script>
+
+<!--isoptop-->
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+<!--Bootstrap cdn으로 가져옴-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--fancybox local으로 가져옴-->
+<script src="js/lib/jquery.fancybox.min.js"></script>
+
+<!-- 🔴 text animation-->
+<script src="js/lib/jquery.textillate.js"></script>
+<script src="js/lib/jquery.lettering.js"></script>
+
+<!--내 자바스크립트 파일-->
+<script src="js/script.js"></script>
+<script src="js/mouseCursorEffect.js"></script>
+<script src="js/photoFrame.js"></script>
+
+
+
+</body>
+</html>

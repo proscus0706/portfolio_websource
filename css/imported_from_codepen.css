@@ -1,0 +1,185 @@
+/*🔷Slide 부분에 마우스 이팩트*/
+/*특이한 마우스 이팩트 주기*/
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 4;
+}
+
+/*🔷About Section의 Photoframe*/
+/*****************************************************
+* Note: I included a "global" stylesheet for all
+* my pens within the settings (just some background
+* and font stuff)
+*****************************************************/
+.aboutSection figure {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    -moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+
+.aboutSection img {
+    border-color: white /* for an acceptable IE result*/;
+    border-width: 15px;
+    -moz-border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+    border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+    border-style: solid;
+    margin: auto;
+}
+
+/**********************************************************
+* If a caption is supplied the image needs a little space
+* at the bottom to include the caption within the frame
+***********************************************************/
+.aboutSection img.hasCaption {
+    padding-bottom: 50px;
+}
+
+.aboutSection figcaption {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 16px;
+    background-color: white;
+    text-align: center;
+    color: blue;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* 🔷about Section의 자기소개*/
+.paper{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 4%;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    background: white;
+}
+.paper1{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+.paper2{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.paper3::after{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    right: 10px;
+    bottom: 0px;
+    left: 10px;
+}
+.paper3::after{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.paper4::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: 0px;
+    bottom: 10px;
+    left: 0px;
+    border-radius: 20%/100%;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.8);
+}
+.paper5::before,
+.paper5::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 0;
+    left: 10%;
+    bottom: 8%;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5);
+}
+.paper5::before{transform: rotate(12deg);}
+.paper5::after{transform: rotate(-12deg);}
+.paper6{box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) inset;}
+
+.paper7::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 102%;
+    height: 0;
+    left: -1%;
+    bottom: 50%;
+    transform:rotate(40deg);
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5);
+}
+.paper8{
+    border-radius: 0;
+    background:
+            repeating-linear-gradient(45deg,
+            gold 0, gold 49.5px,
+            #333 0, #333 99px),
+            repeating-linear-gradient(135deg,
+            gold 0, gold 49.5px,
+            #333 0, #333 99px);
+    background-position: 0 0,0 50px;
+    /*    这边不好写，一个repeat,一个no-repeat*/
+    background-repeat: repeat no-repeat;
+    background-size: 100% 50%;
+    animation:do 2s linear infinite;
+}
+@keyframes do{
+    to{
+        background-position: 150px 0,150px 50px;
+    }
+}
+
+
+/*🔷Contact section의 버튼 animation*/
+.contactButton:hover {
+    /*cursor: pointer;*/
+    animation:click 0.5s ease-in-out; animation-iteration-count:2000;
+    background-color: #fff;
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+@keyframes click {
+    from { transform:scale(1);}
+    to { transform:scale(1); opacity:0.1; border:1px solid white;}
+}
+
+/*🔷Contact section의 letter animation*/
+.lorem {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+}
+
+.lorem > span {
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.lorem > span > span {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    opacity: 0;
+}

@@ -1,0 +1,75 @@
+body {
+	background: #232323;
+	margin: 0;
+	font-family: "Monserrat", "Avenir", sans-serif;
+}
+
+#container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.square {
+	float: left;
+	width: 30%;
+	margin: 1.66%;
+	background: yellow;
+	padding-bottom: 200px;
+	display: none;
+	border-radius: 25%;
+
+	transition: background 1s;
+	/*원래는 여기다가 브라우저들마다 적용해야할 최적화 코드를 적는다*/
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	background: steelblue;
+	margin: 0;
+	font-weight: normal;
+	padding: 20px 0;
+	line-height: 1.2;
+}
+
+#message {
+	color: black;
+	width: 20%;
+	display: inline-block;
+}
+
+#stripe {
+	color: black;
+	background: white;
+	text-align: center;
+	margin: 0;
+}
+
+.selected {
+	background: steelblue;
+	border-bottom: solid steelblue 1px;
+}
+
+#rgb_color {
+	text-transform: uppercase;
+	font-size: 200%;
+}
+
+button {
+	background: none;
+	outline: none;
+	border: none;
+	font-size: inherit;
+	margin: 0;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+
+button:hover {
+	background: steelblue;
+	color: white;
+	border-bottom: solid steelblue 1px;
+
+	transition: all 0.5s;
+}
